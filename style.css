@@ -1,0 +1,147 @@
+html {
+    font-size:10px;
+    /*font-family: sans-serif, serif;*/
+    font-family: 'bitstream_vera_sansroman';
+}
+
+@font-face {
+    font-family: 'bitstream_vera_sansroman';
+    src: url('fonts/vera-webfont.woff2') format('woff2'),
+         url('fonts/vera-webfont.woff2') format('woff');
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+}
+body {
+    background: #d1d1d1;
+    height: 100%;
+    width: 100%;
+    color: #cccccc;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.2em;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.3em;
+}
+
+h6 {
+    font-size: 12em;
+}
+
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+.center {
+    text-align: center;
+}
+.container {
+    background: #07325f;
+}
+.container li {
+    list-style: none;
+}
+.bg:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    #opacity : 0.2;
+    z-index: -1;
+}
+
+.youtube:after {
+  background: url(images/YouTube-icon-full_color_640.png) center center no-repeat;
+}
+.ark{
+    color: #cccccc;
+}
+.ark:after {
+  background: black url(images/Ark_Black.png) center center no-repeat;
+}
+.blue {
+    color: #4c99ff;
+    font-weight: bold;
+}
+a:link,a:visited {
+    color: #cccccc;
+    text-decoration: underline;
+}
+a:hover {
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5) ;
+    text-decoration: none;
+    font-weight: bold;
+}
+.info-box {
+    margin: 0 auto;
+    text-align: center;;
+}
+
+.card {
+    display: inline-block;
+    width: 300px;
+    height: 310px;
+    margin-bottom: 1.5em;
+    vertical-align: middle;
+    /*border: 1px solid black;*/
+}
+
+.card header {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.card img {
+    margin: 0 auto;
+    display: block;
+}
+
+.card footer {
+    text-align: left;
+    font-size: 1.6em;
+    line-height: 1.2;
+    padding: 1em;
+}
+.facts {
+    width: 55%;
+    margin-left:45%;
+    /*border: 1px solid black;*/
+    display: inline-block;
+
+}
+.facts li {
+    list-style: circle;
+    text-align: left;
+}
+.facts h4 {
+    margin: 0;
+}
+.stand-out {
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.5) ;
+    font-weight: bold;
+    font-size: larger;
+}
