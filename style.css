@@ -1,16 +1,17 @@
 html {
     font-size:10px;
-    /*font-family: sans-serif, serif;*/
-    font-family: 'bitstream_vera_sansroman';
+    font-family: "Trebuchet MS";/*, sans-serif, serif;*/
+    /*font-family: 'bitstream_vera_sansroman';*/
 }
 
+/*
 @font-face {
     font-family: 'bitstream_vera_sansroman';
     src: url('fonts/vera-webfont.woff2') format('woff2'),
          url('fonts/vera-webfont.woff2') format('woff');
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
 }
+*/
+
 body {
     background: #d1d1d1;
     height: 100%;
@@ -42,8 +43,6 @@ h5 {
 h6 {
     font-size: 12em;
 }
-
-
 
 @media (min-width: 1200px) {
     .container {
@@ -145,3 +144,53 @@ a:hover {
     font-weight: bold;
     font-size: larger;
 }
+
+.ribbon {
+    font-size: 16px !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+    width: 70%;
+
+    position: relative;
+    background: #0b54ba;
+    color: #fff;
+    text-align: center;
+    padding: 1em 2em; /* Adjust to suit */
+    margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #0b4f9f;
+    z-index: -1;
+}
+.ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+.ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #073f80 transparent transparent transparent;
+    bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+
+.non-semantic-protector { position: relative; z-index: 1; }
